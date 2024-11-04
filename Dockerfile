@@ -4,7 +4,7 @@ FROM python:3.9-slim
 # FROM python:alpine3.20
 
 
-WORKDIR /app
+WORKDIR /ChatGpt_USGov
 
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/ddesonier/AOAI_ChatGpt_0.28.git .
+RUN git clone https://github.com/ddesonier/ChatGPT_USGov.git .
 
 
 RUN pip install -r requirements.txt
