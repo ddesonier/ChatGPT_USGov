@@ -4,20 +4,25 @@ A fully python based Streamlit development harness for ChatGPT hosted in Azure O
 
 ## Getting Started
 
-### Setting up the Environment
+## Setup
 
-To get started, you will need to create a `.env` file in the root of the project.  This file will contain the environment variables needed to run the app. You can make a copy of `local.env` and rename it to `.env` to get started.  You will need to fill in the following values:
- 
-```bash
-AZURE_OPENAI_ENDPOINT=""
-AZURE_OPENAI_KEY=""
-AZURE_OPENAI_API_VERSION=""
-AZURE_OPENAI_CHATGPT_DEPLOYMENT=""
-```
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/ddesonier/ChatGPT_USGov.git
+   cd ChatGPT_USGov
+   ```
 
-You can find the values for these variables in the Azure Portal.  You will need to create an Azure OpenAI resource and deploy the ChatGPT model to it.  Once you have done that, you can find the values for these variables in the resource.
+2. **Create a virtual environment and activate it**:
+   ```sh
+   python -m venv .venv
+   .venv\Scripts\activate  # On Windows
+   source .venv/bin/activate  # On macOS/Linux
+   ```
 
-The app will load this .env file using the python-dotenv library.
+3. **Install the required libraries**:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
 ### Running the App
 
